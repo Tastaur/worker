@@ -25,13 +25,13 @@ export const useWebWorker = <Payload>(fn:(payload:Payload) => void) => {
                 reject(error)
             }
             worker.postMessage(value)
-        }).then(data=> setResult(data))
-            .catch(err=>setError(err.message))
+        })
+            .then(data => setResult(data))
+            .catch(err => setError(err.message))
             .finally(()=> {
             worker.terminate()
             setInProcess(false)
         })
-
     },[fn])
 
     return {
