@@ -15,14 +15,14 @@ const hardFibonacciWorker =  async () =>{
     const start = performance.now()
     console.log(start)
     const res =  await Promise.all([
-        fibWorker(44),
-        fibWorker(44),
-        fibWorker(44),
-        fibWorker(44),
-        fibWorker(44),
-        fibWorker(44),
-        fibWorker(44),
-        fibWorker(44),
+        fibWorker(40),
+        fibWorker(40),
+        fibWorker(40),
+        fibWorker(40),
+        fibWorker(40),
+        fibWorker(40),
+        fibWorker(40),
+        fibWorker(40),
     ])
     console.log(res)
     console.log(performance.now() - start)
