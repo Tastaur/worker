@@ -9,16 +9,16 @@ console.log('start')
 console.log(fn(40))
 console.log('end')
 
-// const promiseInter =  (n) => {
-//      return new Promise(resolve => {
-//         resolve(fn(n))
-//     }).then((data) => data)
-// }
 
-// const endFn = async () =>{
+
+// const hardFibonacciCount =  () =>{
 //     const start = performance.now()
 //     console.log(start)
 //      const data = [
+//          fn(44),
+//          fn(44),
+//          fn(44),
+//          fn(44),
 //          fn(44),
 //          fn(44),
 //          fn(44),
@@ -29,7 +29,33 @@ console.log('end')
 // }
 //
 //
+// hardFibonacciCount()
+// console.log('end')
+
+
+// const promiseFibonacci =  (n) => {
+//     return new Promise(resolve => {
+//         resolve(fn(n))
+//     }).then((data) => data)
+// }
+//
+// const hardFibonacciPromiseCount = async () =>{
+//     const start = performance.now()
+//     console.log(start)
+//     const data = await Promise.all([
+//         promiseFibonacci(40),
+//         promiseFibonacci(40),
+//         promiseFibonacci(40),
+//         promiseFibonacci(40),
+//         promiseFibonacci(40),
+//         promiseFibonacci(40),
+//         promiseFibonacci(40),
+//         promiseFibonacci(40),
+//     ])
+//     console.log(data)
+//     console.log(performance.now() - start)
+// }
 //
 //
-// endFn()
-// console.log('some')
+// hardFibonacciPromiseCount()
+// console.log('end')
