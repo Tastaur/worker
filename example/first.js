@@ -8,10 +8,10 @@ const perfomMesaure = (fn) => {
 }
 
 
-const simpleCycle = (i, start) => {
-    console.log(`${i + 1} ${performance.now() - start}`)
-}
-perfomMesaure(simpleCycle)
+// const simpleCycle = (i, start) => {
+//     console.log(`${i + 1} ${performance.now() - start}`)
+// }
+// perfomMesaure(simpleCycle)
 
 
 // const timeoutCycle = (i, start) =>{

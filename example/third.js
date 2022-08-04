@@ -5,24 +5,25 @@ const fn = (n) => {
     return fib(n)
 }
 
-console.log('start')
-console.log(fn(40))
-console.log('end')
+// const start = performance.now()
+// console.log(start,'start')
+// console.log(fn(42))
+// console.log(performance.now() - start,'end')
 
-
+//
 
 // const hardFibonacciCount =  () =>{
 //     const start = performance.now()
 //     console.log(start)
 //      const data = [
-//          fn(44),
-//          fn(44),
-//          fn(44),
-//          fn(44),
-//          fn(44),
-//          fn(44),
-//          fn(44),
-//          fn(44),
+//          fn(40),
+//          fn(40),
+//          fn(40),
+//          fn(40),
+//          fn(40),
+//          fn(40),
+//          fn(40),
+//          fn(40),
 //      ]
 //     console.log(data)
 //     console.log(performance.now() - start)
