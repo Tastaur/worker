@@ -1,25 +1,25 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import {useFibonacci} from "./hooks";
-import {fn} from "./fib";
+import {useFibonacci} from "./hooks";
+// import {fn} from "./fib";
 
 
 function App() {
     const [input, setInput] = useState(1)
 
-    let inProcess = false
-    const [result, setResult] = useState(0)
-    const onRequestFibonacci = () => {
-        inProcess = true
-        setResult(fn(input))
-        inProcess = false
-    }
-
-    // const {run, result, inProcess} = useFibonacci()
-    // const onRequestFibonacci = async () => {
-    //     await run(input)
+    // let inProcess = false
+    // const [result, setResult] = useState(0)
+    // const onRequestFibonacci = () => {
+    //     inProcess = true
+    //     setResult(fn(input))
+    //     inProcess = false
     // }
+
+    const {run, result, inProcess} = useFibonacci()
+    const onRequestFibonacci = async () => {
+        await run(input)
+    }
 
     return (
         <div className="App">
