@@ -59,3 +59,30 @@ console.log('end')
 //
 // hardFibonacciPromiseCount()
 // console.log('end')
+
+//
+// const hardFibonacciPromiseCount = async () =>{
+//     const start = performance.now()
+//     console.log(start)
+//     const fibFunc = new Promise((res)=>{
+//         setTimeout(()=>{
+//             res(fn(44))
+//         },0)
+//     }).then(data => data)
+//     const data = await Promise.all([
+//         fibFunc,
+//         fibFunc,
+//         fibFunc,
+//         fibFunc,
+//         fibFunc,
+//         fibFunc,
+//         fibFunc,
+//         fibFunc,
+//     ])
+//     console.log(data)
+//     console.log(performance.now() - start)
+// }
+//
+//
+// hardFibonacciPromiseCount()
+// console.log('end')
