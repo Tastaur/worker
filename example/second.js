@@ -6,7 +6,7 @@ const {
 const start = performance.now()
 
 
-process.env.UV_THREADPOOL_SIZE = 16
+// process.env.UV_THREADPOOL_SIZE = 8
 
 console.log('start')
 for (let i = 0; i < 16; i++) {
