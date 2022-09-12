@@ -2,23 +2,23 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 // import {useFibonacci} from "./hooks";
+
 import {fn} from "./fib";
 
 
 function App() {
     const [input, setInput] = useState(1)
 
-    let inProcess = false
+    const [inProcess, setInProcess] = useState(false)
     const [result, setResult] = useState(0)
     const onRequestFibonacci = async () => {
-        inProcess = true
+        setInProcess(true)
         await new Promise((resolve) => {
             setTimeout(()=>{
               resolve(fn(input))
             },0)
         }).then((data)=> setResult(data as number))
-
-        inProcess = false
+            .finally(()=> setInProcess(false))
     }
 
     // const {run, result, inProcess} = useFibonacci()
